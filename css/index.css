@@ -6,12 +6,13 @@ body{
 }
 
 .header-container{
-    background-color: rgb(54, 54, 54);
+    background-color: #2c2b2b;
 }
 
 .header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 h1{
@@ -21,7 +22,7 @@ h1{
 ul{
     list-style: none;
     display: flex;
-    gap: 16px;
+    gap: 20px;
 }
 
 a{
@@ -30,13 +31,47 @@ a{
     text-decoration: none;
 }
 
+.dropdown-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.dropdown-header{
+    color: white;
+    cursor: pointer;
+    padding: 30px;
+}
+
+.dropdown-content{
+    display: none;  
+    position: absolute; 
+    border-radius: 2px;
+    border: rgba(209, 201, 201, 0.205) 1px solid;
+    margin-top: 60px;
+}
+
+.dropdown-link{
+    padding: 10px;
+}
+
+.dropdown-container:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-link:hover{
+    background-color: #252525;
+
+}
+
 .banner{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     color: white;
     height: 550px;
-    background-color: rgb(54, 54, 54);
+    background-color: #2c2b2b;
 }
 
 .images{
@@ -92,7 +127,7 @@ h3{
 
 .footer{
     display: flex;
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
     background-color: rgb(54, 54, 54);
     padding: 12px;
     justify-content: center;
