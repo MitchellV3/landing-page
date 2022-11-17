@@ -22,7 +22,7 @@ h1{
 ul{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 a{
@@ -40,7 +40,8 @@ a{
 .dropdown-header{
     color: white;
     cursor: pointer;
-    padding: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .dropdown-content{
