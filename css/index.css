@@ -1,4 +1,5 @@
 body{
+    font-family: 'Jost', 'Quattrocento', sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -11,12 +12,20 @@ body{
 
 .header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
 h1{
+    font-family: 'Quattrocento', 'Jost', serif;
+    font-weight: normal;
+    font-size: 62px;
     color: white;
+    margin: 0;
+}
+
+li{
+    font-size: 20px;
 }
 
 ul{
@@ -26,7 +35,7 @@ ul{
 }
 
 a{
-    color: white;
+    color: rgb(211, 211, 211);
     font-style: normal;
     text-decoration: none;
 }
@@ -34,11 +43,10 @@ a{
 .dropdown-container{
     display: flex;
     justify-content: center;
-
 }
 
 .dropdown-header{
-    color: white;
+    color: rgb(211, 211, 211);
     cursor: pointer;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -49,7 +57,7 @@ a{
     position: absolute; 
     border-radius: 2px;
     border: rgba(209, 201, 201, 0.205) 1px solid;
-    margin-top: 60px;
+    margin-top: 75px;
 }
 
 .dropdown-link{
@@ -59,38 +67,102 @@ a{
 .dropdown-container:hover .dropdown-content{
     display: flex;
     flex-direction: column;
+    background-color: #2c2b2b;
 }
 
 .dropdown-link:hover{
     background-color: #252525;
-
+    color: white;
 }
 
 .banner{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    color: white;
+    color: rgb(211, 211, 211);
     height: 550px;
     background-color: #2c2b2b;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.banner-left{
+margin: 0;
+}
+
+.banner-info{
+    font-size: 20px;
+}
+
+.start-here-button{
+    padding: 10px 18px;
+    font-size: 16px;
+    background-color: rgb(211, 211, 211);
+    color: #2c2b2b;
+    border: none;
+    border: rgb(211, 211, 211) 2px solid;
+}
+
+.start-here-button:hover{
+    cursor: pointer;
+    color: rgb(211, 211, 211);
+    background-color: #2c2b2b;
+    border: rgb(211, 211, 211) 2px solid;
+}
+
+.banner-image{
+    width: 750px;
+    height: auto;
+    border: #212122 solid 8px;
 }
 
 .images{
     display: flex;
     justify-content: center;
+    gap: 60px;
+}
+
+.info-container{
+    background-color: rgb(233, 233, 233);
 }
 
 h3{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 35px;
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.volume-image{
+    width: 300px;
+    height: auto;
+    filter: drop-shadow(8px 8px 5px #4a4a4d);
+    border: #212122 solid 4px;
+    transition: 300ms;
+}
+
+.volume-image:hover{
+    cursor: pointer;
+    width: 325px;
+}
+
+.volume-image-label{
+    font-size: 20px;
+    text-align: center;
 }
 
 .image-container{
     display: flex;
     flex-direction: column;
-    padding: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .quote-container{
