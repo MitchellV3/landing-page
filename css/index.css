@@ -70,6 +70,10 @@ a{
     background-color: #2c2b2b;
 }
 
+.dropdown-header:hover{
+    color: white;
+}
+
 .dropdown-link:hover{
     background-color: #252525;
     color: white;
@@ -77,7 +81,8 @@ a{
 
 .banner{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
     align-items: center;
     color: rgb(211, 211, 211);
     height: 550px;
@@ -101,6 +106,7 @@ h2{
     color: #2c2b2b;
     border: none;
     border: rgb(211, 211, 211) 2px solid;
+    display: inline-block;
 }
 
 .start-here-button:hover{
@@ -113,7 +119,7 @@ h2{
 .banner-image{
     width: 750px;
     height: auto;
-    border: #212122 solid 8px;
+    border: #212122 solid 4px;
 }
 
 .images{
@@ -134,6 +140,7 @@ h3{
     font-size: 30px;
     font-weight: normal;
     margin: 0;
+    color: #2c2b2b;
 }
 
 .volume-image{
@@ -152,6 +159,7 @@ h3{
 .volume-image-label{
     font-size: 20px;
     text-align: center;
+    color: #2c2b2b;
 }
 
 .image-container{
@@ -185,7 +193,7 @@ h3{
     align-items: center;
     justify-content: center;
     position: relative;
-    color: white;
+    color: rgb(211, 211, 211);
     height: 500px;
 }
 
@@ -213,30 +221,41 @@ h3{
     margin: 0;
 }
 
-.call-to-action{
+.more-info{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px;
+    padding: 50px;
+    background-color: rgb(233, 233, 233);
+    font-size: 20px;
 }
 
-.sign-up-banner{
-    background-color: chartreuse;
-    color: white;
+.more-info-banner{
+    background-color: rgba(33, 33, 34, 0.75);
+    border-radius: 5px;
+    color: rgb(211, 211, 211);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 700px;
-    gap: 100px;
-    padding: 15px;
+    width: 800px;
+    gap: 50px;
+    padding: 25px;
 }
 
 .footer{
+    /* Copyright info taken from: https://berserk.fandom.com/wiki/Berserk_Wiki */
     display: flex;
+    flex-direction: column;
     color: rgba(255, 255, 255, 0.5);
     background-color: rgb(54, 54, 54);
     padding: 12px;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
+}
+
+.footer-info, .footer-copyright{
+    margin: 0;
+    padding: 5px;
 }
 
