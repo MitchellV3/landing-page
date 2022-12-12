@@ -177,7 +177,7 @@ h3{
 }
 
 .bg-image{
-    background-image: url(https://salten.cz/wp-content/uploads/2022/06/f28dc-16545820860882-1920.jpg);
+    background-image: url("../img/quotebg.jpg");
     filter: blur(2px);
     background-repeat: no-repeat;
     background-size: cover;
